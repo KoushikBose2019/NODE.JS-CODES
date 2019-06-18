@@ -26,17 +26,7 @@ app.post("/",(req,res)=>{
  res.render("about/:a:b",{title:"division",div:parseInt(req.params.a)/parseInt(req.params.b)});
  res.render("about/:a:b",{title:"multiplication",mul:parseInt(req.params.a)*parseInt(req.params.b)});
  res.render("about/:a:b",{title:"subtraction",sub:parseInt(req.params.a)-parseInt(req.params.b)});
- 
-
- 
+  
 });*/
-
-
-
-
-
-
-
-
 
 app.listen(7000,()=>console.log("server is running on a port : 7000"));
