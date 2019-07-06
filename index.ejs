@@ -5,7 +5,24 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
+    <title>Filter Employee Record</title>
+    <div>
+      <form action="/search/" id="EmployeeForm" method="post"></form>
+     <label>By Name</label>
+     <input type="text" name="name" placeholder="enter name">
+    </div>
+    <div>
+    <label>By Email</label>
+    <input type="text" name="email" placeholder="enter emailid">
+   </div>
+   <div>
+      <label>By EmployeeType</label>
+      <input type="text" name="EmployeeType" placeholder="enter EmployeeType">
+     </div>
+     <div>
+       <input type="submit"name="submit" value="search">
+     </div>
+     <br></br>
     <table>
     <tr>
       <th>Name</th>
