@@ -1,9 +1,28 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title><%=title%></title>
-        <body>
-        <h1><%=title%></h1>
-        <p><%=message%></p>
-        </body>
-    </head>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Emp type</th>
+      <th>Hourly Rate</th>
+      <th>Total Hours</th>    
+    </tr>
+    <%records.forEach(function(row){%>
+    <tr>
+      <td><%=row.Name %></td>
+      <td><%=row.Email %></td>
+      <td><%=row.etype %></td>
+      <td><%=row.hourlyrate %></td>
+      <td><%=row.totalhour %></td>
+    </tr>
+    <% }) %>
+    </table>
+  </body>
 </html>
